@@ -1,5 +1,5 @@
 {
-  "name": "node-moduleloader",
+  "name": "load-my-modules",
   "version": "0.0.1",
   "description": "Load modules for an App object.",
   "main": "main.js",
@@ -13,7 +13,7 @@
     "node": "8.x"
   },
   "repository": {
-    "url": "https://github.com/animatedcreativity/node-moduleloader"
+    "url": "https://github.com/animatedcreativity/load-my-modules"
   },
   "license": "MIT",
   "keywords": [
