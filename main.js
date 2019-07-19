@@ -1,5 +1,6 @@
 exports = module.exports = function() {
   var fs = require("fs");
+  var path = require("path");
   var started = {};
   var mod = {
     load: function(app, folder, moduleConfig) {
@@ -11,7 +12,9 @@ exports = module.exports = function() {
           var fileName = files[i];
           var file = folder + "/" + fileName;
           if (typeof app.module === "undefined") app.module = {};
-          app.module[fileName.split(".").shift()] = require(file)(app, moduleConfig);
+          console.log(path.resolve(file));
+          console.log("./");
+          app.module[fileName.split(".").shift()] = require(path.resolve(file))(app, moduleConfig);
         }
         for (var key in app.module) {
           var module = app.module[key];
