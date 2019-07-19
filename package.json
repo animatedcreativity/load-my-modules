@@ -1,0 +1,26 @@
+{
+  "name": "node-load-modules",
+  "version": "0.0.1",
+  "description": "Load modules for an App object.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://github.com/animatedcreativity/node-load-modules"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "load",
+    "module",
+    "modules",
+    "app"
+  ]
+}
