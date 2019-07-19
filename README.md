@@ -7,7 +7,7 @@ config = {apple: "banana"};
 var folder = "module";
 var app = {};
 var modulesLoader = require("load-my-modules")();
-modulesLoader.load(app, folder, config);
+modulesLoader.load(app, config, folder);
 console.log(app.module);
 ```
 

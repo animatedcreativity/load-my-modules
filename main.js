@@ -3,7 +3,7 @@ exports = module.exports = function() {
   var path = require("path");
   var started = {};
   var mod = {
-    load: function(app, folder, moduleConfig) {
+    load: function(app, moduleConfig, folder) {
       if (typeof folder === "undefined") folder = "module";
       if (typeof moduleConfig === "undefined") moduleConfig = {};
       if (fs.existsSync(folder) === true) {
