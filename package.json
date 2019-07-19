@@ -1,6 +1,6 @@
 {
   "name": "load-my-modules",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Load modules for an App object.",
   "main": "main.js",
   "scripts": {

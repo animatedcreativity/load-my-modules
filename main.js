@@ -12,8 +12,6 @@ exports = module.exports = function() {
           var fileName = files[i];
           var file = folder + "/" + fileName;
           if (typeof app.module === "undefined") app.module = {};
-          console.log(path.resolve(file));
-          console.log("./");
           app.module[fileName.split(".").shift()] = require(path.resolve(file))(app, moduleConfig);
         }
         for (var key in app.module) {
